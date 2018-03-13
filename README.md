@@ -13,7 +13,7 @@ I had to learn how the Google Maps Javascript API works. I'm working with a sing
 
 ## Libraries, tools and technologies
 
-`Bootstrap`, `UnderscoreJS`, `AngularJS`, `webpack`, `babel`, `sass`, `ES6`, `Babel`, `BEM`
+`webpack`, `ES6`, `Babel`, `AngularJS`, `sass`, `Bootstrap`, `UnderscoreJS`, `BEM`
 
 ## How to run
 
