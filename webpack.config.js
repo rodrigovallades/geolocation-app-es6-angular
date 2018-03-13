@@ -7,8 +7,8 @@ const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 
 const config = {
 	entry: {
-		'app': './src/app.module.js',
-		'vendor': './src/vendor.module.js'
+		'app': './src/app/app.module.js',
+		'vendor': './src/app/vendor.module.js'
 	},
 	devtool: 'source-map',
 	output: {
@@ -74,7 +74,7 @@ const config = {
 			$: 'jquery',
 			jquery: 'jquery'
 		}),
-		new ExtractTextWebpackPlugin('styles/styles.css'),
+		new ExtractTextWebpackPlugin('app/styles/styles.css'),
 		new OptimizeCssAssetsWebpackPlugin()
 	],
 	devServer: {
