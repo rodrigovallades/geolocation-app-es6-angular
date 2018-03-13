@@ -1,0 +1,12 @@
+// for fixing of loading bootstrap icon files
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+@import 'vars/typography';
+@import 'vars/navbar';
+@import 'vars/body';
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+@import 'blocks/body';
+
+@import 'elements/navbar';
