@@ -19,8 +19,3 @@ I had to learn how the Google Maps Javascript API works. I'm working with a sing
 
 * `npm install` to install all dependencies.
 * `npm start` to run project.
-
-## Screenshots
-
-![Desktop view](./docs/img/geolocationapp-desktop.png)
-![Mobile view](./docs/img/geolocationapp-mobile.png)
