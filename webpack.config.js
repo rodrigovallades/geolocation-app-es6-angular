@@ -91,12 +91,8 @@ const config = {
 	}
 };
 
-module.exports = (env = {}) => {
-		// Use env.<YOUR VARIABLE> here:
-  console.log('Production: ', env.production) // true
-
+module.exports = (env = {}) => {	
 	if (env.production === true) {
-		console.log('i will') // true
 		config.plugins.push(...[
 			new webpack.optimize.UglifyJsPlugin({
 				comments: false,
