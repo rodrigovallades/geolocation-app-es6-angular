@@ -4,5 +4,6 @@ import './geolocation.scss';
 
 export default {
 	template: template,
-	controller: controller
+	controller: controller,
+	controllerAs: 'vm'
 };

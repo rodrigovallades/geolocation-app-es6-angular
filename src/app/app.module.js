@@ -1,7 +1,8 @@
 import styles from './styles/styles.scss';
 
 import './services/core.module';
-import './app.components';
+import geolocationService from './services/geolocation/geolocation.service';
+import './app.pages';
 
 const appModule = angular
 	.module('geolocation-app', [
@@ -9,5 +10,7 @@ const appModule = angular
 		'ui.router',
 		'app.pages.geolocation'
 	]);
+
+appModule.service('geolocationService', geolocationService);
 
 export default appModule;

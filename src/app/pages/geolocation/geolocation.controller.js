@@ -1,10 +1,15 @@
 export default class GeolocationController {
-	constructor($log) {
+	constructor($log, geolocationService) {
 		'ngInject';
 
 		this.$log = $log;
+		this.geolocationService = geolocationService;
 	}
 
-	$onInit = () => {		
+	$onInit = () => {
+		this.geolocationService.locateUser().then((location) => {
+			this.location = location;
+			this.$log.info(this.location);
+		});
 	};
 }

@@ -1,57 +1,61 @@
 <div class="container">
-	<div class="table-responsive">
-		<table class="table table-striped empty geotable">
-			<tbody>
-				<tr>
-					<td class="geotable__fieldname">IP</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.ip}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">Country</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.country_name}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">Region</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.region_name}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">City</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.city}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">Zip Code</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.zip_code}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">Latitude</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.latitude}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="geotable__fieldname">Longitude</td>
-					<td class="geotable__fieldvalue">{{geolocation.query.longitude}}</td>
-					<td class="text-right">
-						<button class="btn btn-default help">?</button>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="row">
+	    <div class="col-md-6">
+				<div class="table-responsive">
+					<table class="table table-striped empty geotable">
+						<tbody>
+							<tr>
+								<td class="geotable__fieldname">IP</td>
+								<td class="geotable__fieldvalue">{{vm.location.ip}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">Country</td>
+								<td class="geotable__fieldvalue">{{vm.location.country_name}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">Region</td>
+								<td class="geotable__fieldvalue">{{vm.location.region_name}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">City</td>
+								<td class="geotable__fieldvalue">{{vm.location.city}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">Zip Code</td>
+								<td class="geotable__fieldvalue">{{vm.location.zip_code}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">Latitude</td>
+								<td class="geotable__fieldvalue">{{vm.location.latitude}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="geotable__fieldname">Longitude</td>
+								<td class="geotable__fieldvalue">{{vm.location.longitude}}</td>
+								<td class="text-right">
+									<button class="btn btn-default help">?</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+	    </div>
 	</div>
 </div>
