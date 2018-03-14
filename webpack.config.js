@@ -38,7 +38,14 @@ const config = {
 								}
 							},
 							{
-								loader: "sass-loader"
+								loader: "sass-loader",
+                options: {
+									sourceMap: true,
+			            data: '@import "vars";',
+			            includePaths: [
+			              path.join(__dirname, 'src/app/styles/base')
+			            ]
+                }
 							}
 					]
 				})
