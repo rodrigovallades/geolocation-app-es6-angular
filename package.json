@@ -38,6 +38,7 @@
     "angular": "^1.6.5",
     "angular-ui-router": "^1.0.3",
     "bootstrap-sass": "^3.3.7",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "normalize-scss": "^7.0.1"
   }
 }

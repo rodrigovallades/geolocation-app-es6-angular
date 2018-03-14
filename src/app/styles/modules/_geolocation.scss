@@ -1,13 +1,3 @@
-.geotable {
-	&__fieldname {
-		width: 25%;
-  	background-color: $app-table-border-background;
-	}
-  & &__fieldname {
-    border-top-color: $app-table-border-color;
-  }
-}
-
 #map {
 	height: 600px;
 }

@@ -15,6 +15,11 @@ const config = {
 		filename: 'libs/[name].bundle.js',
 		path: path.resolve(__dirname, 'build')
 	},
+	resolve: {
+    alias: {
+      modules: __dirname + '/node_modules'
+    }
+  },
 	module: {
 		rules: [
 			{
@@ -38,6 +43,10 @@ const config = {
 					]
 				})
 			},
+			{
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+	    },
 			// for fixing of loading bootstrap icon files
 			{
 				test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
