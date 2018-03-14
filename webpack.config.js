@@ -73,14 +73,6 @@ const config = {
 		]
 	},
 	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-			comments: false,
-			sourceMap: true,
-		}), // for mifiying js
-		new webpack.optimize.CommonsChunkPlugin({
-			name: 'vendor',
-			filename: 'libs/[name].bundle.js'
-		}),
 		new CleanWebpackPlugin('build'),
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
@@ -90,8 +82,7 @@ const config = {
 			$: 'jquery',
 			jquery: 'jquery'
 		}),
-		new ExtractTextWebpackPlugin('app/styles/styles.css'),
-		new OptimizeCssAssetsWebpackPlugin()
+		new ExtractTextWebpackPlugin('app/styles/styles.css')
 	],
 	devServer: {
 		port: 3000,
@@ -100,4 +91,24 @@ const config = {
 	}
 };
 
-module.exports = config;
+module.exports = (env = {}) => {
+		// Use env.<YOUR VARIABLE> here:
+  console.log('Production: ', env.production) // true
+
+	if (env.production === true) {
+		console.log('i will') // true
+		config.plugins.push(...[
+			new webpack.optimize.UglifyJsPlugin({
+				comments: false,
+				sourceMap: true,
+			}),
+			new webpack.optimize.CommonsChunkPlugin({
+				name: 'vendor',
+				filename: 'libs/[name].bundle.js'
+			}),
+			new OptimizeCssAssetsWebpackPlugin()
+		])
+	}
+
+  return config;
+}
